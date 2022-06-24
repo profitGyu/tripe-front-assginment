@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# Frontend Homework #3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 실행 방법
 
-## Available Scripts
 
-In the project directory, you can run:
+## 사용한 기술과 선택한 이유
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 요구사항
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-[] 문구, 이미지의 레이아웃과 스타일은 트리플 홈페이지와 동일해야 합니다. 단,
+반응형 레이아웃은 고려하지 않습니다. 최소 화면 폭을 1200px로 고정합니다.
 
-### `npm test`
+-[]  좌측 이미지, 지표 문구, 수상 내역 순으로 표시해야 합니다
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-[]  살짝 위로 떠오르는 듯한 애니메이션과 투명도를 조절하는 애니메이션을
+적용해야 합니다.
 
-### `npm run build`
+-[]  등장 애니메이션의 duration은 700ms이고, 애니메이션 사이 간격은
+100ms입니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-[] 숫자가 올라가는 애니메이션
+    -[] 각 숫자는 0부터 시작합니다.
+    -[] 세 숫자 모두 2초 동안 증가하고, 동시에 끝나야 합니다.
+    -[]  증가 속도가 느려지는 효과를 구현해야 합니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

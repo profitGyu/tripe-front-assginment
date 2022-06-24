@@ -1,4 +1,4 @@
-function App() {
+const Routes = () => {
   return (
     <div className="App">
       <div>하윙</div>
@@ -6,4 +6,4 @@ function App() {
   )
 }
 
-export default App
+export default Routes
