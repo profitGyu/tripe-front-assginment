@@ -1,13 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
 
-import reset from './base/reset'
-import more from './base/more'
 import font from './base/font'
+import more from './base/more'
+import reset from './base/reset'
 
 const GlobalStyle = createGlobalStyle`
-  ${reset}
-  ${more}
   ${font}
+  ${more}
+  ${reset}
 `
 
 export default GlobalStyle

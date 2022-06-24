@@ -1,7 +1,7 @@
 const colors = {
   text: '#3a3a3a',
-  textSecondary: 'rgba(58, 58, 58, 0.7)',
-  background: '#fefefe',
+  textSecondary: '#616161',
+  background: '#FFFFFF',
 }
 
 export default colors

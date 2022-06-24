@@ -1,8 +1,11 @@
+import OutcomePage from './outcomePage'
+import { RouteContainer } from './route.styled'
+
 const Routes = () => {
   return (
-    <div className="App">
-      <div>하윙</div>
-    </div>
+    <RouteContainer>
+      <OutcomePage />
+    </RouteContainer>
   )
 }
 
