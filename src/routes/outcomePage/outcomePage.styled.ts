@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import colors from '../../styles/constants/colors'
+import animation from '../../styles/mixins/animation'
 import { Triple2Image } from '../../assets/images/index'
 
 export const Container = styled.section`
@@ -23,32 +24,21 @@ export const ContentLogo = styled.div`
   background-size: 400px 338px;
   background-repeat: no-repeat;
   text-align: center;
+  animation-name: ${animation.fadeIn};
+  animation-duration: 700ms;
 `
 
-export const MetricsContainer = styled.div`
+export const MetricsContainer = styled.ul`
   margin-left: 623px;
+  animation-name: ${animation.fadeIn};
+  animation-delay: 100ms;
+  animation-duration: 700ms;
 `
 
-export const AwardsContainer = styled.div`
-  position: absolute;
+export const AwardsContainer = styled.ul`
+  display: flex;
   margin: 50px 0px 0px 623px;
-`
-// eslint-disable-next-line @typescript-eslint/naming-convention
-interface IAwardItemProp {
-  img: string
-}
-
-export const AwardItem = styled.div<IAwardItemProp>`
-  display: inline-block;
-  background-size: 54px 54px;
-  height: 54px;
-  padding: 5px 0px 5px 62px;
-  margin-right: 39px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 22px;
-  color: ${colors.textSecondary};
-  background-image: ${(props) => `url(${props.img}) `};
-  background-position: left top;
-  background-repeat: no-repeat;
+  animation-name: ${animation.fadeIn};
+  animation-delay: 200ms;
+  animation-duration: 700ms;
 `
