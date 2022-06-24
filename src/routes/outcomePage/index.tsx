@@ -1,10 +1,10 @@
 import { PlayStore2Image, Apple4Image } from '../../assets/images/index'
+import MetricItem from '../../components/MetricItem'
 
 import {
   Container,
   ContentLogo,
   MetricsContainer,
-  MetricItem,
   AwardsContainer,
   AwardItem,
 } from './outcomePage.styled'
@@ -15,9 +15,9 @@ const OutcomePage = () => {
       <ContentLogo>2021년 12월 기준</ContentLogo>
       <MetricsContainer>
         <ul>
-          <MetricItem>700만 명의 여행자</MetricItem>
-          <MetricItem>100만 개의 여행 리뷰</MetricItem>
-          <MetricItem>470만 개의 여행 일정</MetricItem>
+          <MetricItem count="700" unit="만명" info="의 여행자" />
+          <MetricItem count="100" unit="만개" info="의 여행 리뷰" />
+          <MetricItem count="470" unit="만개" info="의 여행 일정" />
         </ul>
       </MetricsContainer>
       <AwardsContainer>

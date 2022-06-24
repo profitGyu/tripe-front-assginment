@@ -28,12 +28,6 @@ export const ContentLogo = styled.div`
 export const MetricsContainer = styled.div`
   margin-left: 623px;
 `
-export const MetricItem = styled.li`
-  font-size: 36px;
-  letter-spacing: -1px;
-  margin-bottom: 20px;
-  color: ${colors.text};
-`
 
 export const AwardsContainer = styled.div`
   position: absolute;

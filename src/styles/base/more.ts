@@ -59,6 +59,10 @@ const more = css`
       cursor: not-allowed;
     }
   }
+
+  mark {
+    all: unset;
+  }
 `
 
 export default more
