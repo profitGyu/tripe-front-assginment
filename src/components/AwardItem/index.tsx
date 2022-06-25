@@ -1,19 +1,19 @@
 import { Award, AwardImg, AwardText } from './awardItem.styled'
 
 interface Props {
-  text1: string
-  text2: string
+  upperText: string
+  downText: string
   img: string
 }
 
-const AwardItem = ({ img, text1, text2 }: Props) => {
+const AwardItem = ({ img, upperText, downText }: Props) => {
   return (
     <Award>
       <AwardImg src={img} />
       <AwardText>
-        {text1}
+        {upperText}
         <br />
-        {text2}
+        {downText}
       </AwardText>
     </Award>
   )

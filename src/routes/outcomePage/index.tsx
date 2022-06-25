@@ -1,6 +1,6 @@
-import { PlayStore2Image, Apple4Image } from '../../assets/images/index'
 import AwardItem from '../../components/AwardItem'
 import MetricItem from '../../components/MetricItem'
+import { AWARD_LIST, METRIC_LIST } from '../../v-model/outcome'
 
 import {
   Container,
@@ -14,21 +14,24 @@ const OutcomePage = () => {
     <Container>
       <ContentLogo>2021년 12월 기준</ContentLogo>
       <MetricsContainer>
-        <MetricItem count={700} unit="만명" info="의 여행자" />
-        <MetricItem count={100} unit="만개" info="의 여행 리뷰" />
-        <MetricItem count={400} unit="만개" info="의 여행 일정" />
+        {METRIC_LIST.map((item) => (
+          <MetricItem
+            count={item.count}
+            unit={item.unit}
+            info={item.info}
+            key={item.key}
+          />
+        ))}
       </MetricsContainer>
       <AwardsContainer>
-        <AwardItem
-          img={PlayStore2Image}
-          text1="2018 구글 플레이스토어"
-          text2="올해의 앱 최우수상 수상"
-        />
-        <AwardItem
-          img={Apple4Image}
-          text1="2018 구글 플레이스토어"
-          text2="올해의 앱 최우수상 수상"
-        />
+        {AWARD_LIST.map((item) => (
+          <AwardItem
+            img={item.src}
+            upperText={item.upper}
+            downText={item.down}
+            key={item.key}
+          />
+        ))}
       </AwardsContainer>
     </Container>
   )
