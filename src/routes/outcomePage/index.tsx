@@ -14,9 +14,9 @@ const OutcomePage = () => {
     <Container>
       <ContentLogo>2021년 12월 기준</ContentLogo>
       <MetricsContainer>
-        <MetricItem count="700" unit="만명" info="의 여행자" />
-        <MetricItem count="100" unit="만개" info="의 여행 리뷰" />
-        <MetricItem count="470" unit="만개" info="의 여행 일정" />
+        <MetricItem count={700} unit="만명" info="의 여행자" />
+        <MetricItem count={100} unit="만개" info="의 여행 리뷰" />
+        <MetricItem count={400} unit="만개" info="의 여행 일정" />
       </MetricsContainer>
       <AwardsContainer>
         <AwardItem
